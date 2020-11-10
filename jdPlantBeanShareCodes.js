@@ -12,6 +12,7 @@ let PlantBeanShareCodes = [
   'juggqxidkf6ei2qq7camlxo2uq@olmijoxgmjutzj5xuxq6hbr2luse6oxcmx4y7py@qx4ec555s7sl37rjpjaszxa6hy5ac3f4ijdgqji@necahck54jn7ayws7zvwzova4fjagunvl6lfltq',
   'juggqxidkf6ei2qq7camlxo2uq@olmijoxgmjutzj5xuxq6hbr2luse6oxcmx4y7py@qx4ec555s7sl37rjpjaszxa6hy5ac3f4ijdgqji@necahck54jn7ayws7zvwzova4fjagunvl6lfltq',
   'juggqxidkf6ei2qq7camlxo2uq@olmijoxgmjutzj5xuxq6hbr2luse6oxcmx4y7py@qx4ec555s7sl37rjpjaszxa6hy5ac3f4ijdgqji@necahck54jn7ayws7zvwzova4fjagunvl6lfltq'
+  ]
 // 判断github action里面是否有东东萌宠互助码
 if (process.env.PLANT_BEAN_SHARECODES) {
   if (process.env.PLANT_BEAN_SHARECODES.indexOf('&') > -1) {
