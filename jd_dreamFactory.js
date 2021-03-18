@@ -96,7 +96,7 @@ if ($.isNode()) {
       await jdDreamFactory()
     }
   }
-  for (let i = 0; i < cookiesArr.length; i++) {
+  /*for (let i = 0; i < cookiesArr.length; i++) {
     if (cookiesArr[i]) {
       $.UserName = decodeURIComponent(cookie.match(/pt_pin=(.+?);/) && cookie.match(/pt_pin=(.+?);/)[1])
       console.log(`${$.UserName}去参加第一个cookie账号开的团`)
@@ -106,7 +106,7 @@ if ($.isNode()) {
       }
       await joinLeaderTuan();//参团
     }
-  }
+  }*/
 })()
     .catch((e) => {
       $.log('', `❌ ${$.name}, 失败! 原因: ${e}!`, '')
@@ -118,17 +118,17 @@ if ($.isNode()) {
 async function jdDreamFactory() {
   await userInfo();
   await QueryFriendList();//查询今日招工情况以及剩余助力次数
-  await joinLeaderTuan();//参团
+ // await joinLeaderTuan();//参团
   await helpFriends();
   if (!$.unActive) return
   await getUserElectricity();
-  await taskList();
-  await investElectric();
+  //await taskList();
+  //await investElectric();
   await QueryHireReward();//收取招工电力
   await PickUp();//收取自家的地下零件
-  await stealFriend();
-  await tuanActivity();
-  await QueryAllTuan();
+ // await stealFriend();
+ // await tuanActivity();
+  //await QueryAllTuan();
   await exchangeProNotify();
   await showMsg();
 }
