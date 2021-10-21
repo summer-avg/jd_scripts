@@ -319,7 +319,7 @@ function requireConfig() {
       }
     }
     console.log(`共${cookiesArr.length}个京东账号\n`);
-    $.shareCodesArr = [];
+    $.shareCodesArr = ['Qt2twOqlQw-ifILWW5gzmqP8-1Qj53TYU3LtHPalTbM','RtGKzu2mEAiketHMQtMzhTx6XMH7uEL9NKkxvbqK0bixeLnyXg','S8C0lrD9CFuid4qYW5h_1qlqAbgcM11g0eWUen0cDh-l','W9G-i5HfF3v7Odn7UYh_mqVTJFX10n7sgNwps0-9fsx35oQ'];
     if ($.isNode()) {
       Object.keys(shareCodes).forEach((item) => {
         if (shareCodes[item]) {
